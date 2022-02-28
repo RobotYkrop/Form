@@ -1,0 +1,252 @@
+body {
+  background-color: #96A5B1;
+  font-family: "Barlow", sans-serif;
+}
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.form {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.title_header_form {
+  color: #2A4A5C;
+  margin-top: 100px;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.text_header_form {
+  color: #7B8A92;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.left .bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.left .logo {
+  height: 30px;
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  margin-left: 35px;
+}
+
+.right {
+  margin-left: 75px;
+}
+
+.right .buttons {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right .or {
+  position: relative;
+  top: 5px;
+  margin: 80px 10px 0px 10px;
+  font-size: 12px;
+}
+
+.right .button_facebook {
+  position: relative;
+}
+
+.right .button_facebook ::after {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  border-bottom: 1px #EEE solid;
+  content: "";
+  pointer-events: none;
+}
+
+.right .button_linkedin {
+  position: relative;
+}
+
+.right .button_linkedin ::after {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 50%;
+  border-bottom: 1px #EEE solid;
+  content: "";
+  pointer-events: none;
+}
+
+.right .facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  padding-right: 55px;
+  background-color: #255A9B;
+  border: none;
+  color: white;
+}
+
+.right .facebook:hover {
+  background-color: #3379cf;
+  cursor: pointer;
+}
+
+.right .linkedIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  padding-right: 55px;
+  background-color: #0076B6;
+  border: none;
+  color: white;
+}
+
+.right .linkedIn:hover {
+  cursor: pointer;
+  background-color: #035e8f;
+}
+
+.right .image_facebook {
+  height: 15px;
+  margin-right: 15px;
+}
+
+.right .image_linkedin {
+  height: 15px;
+  margin-right: 15px;
+}
+
+.right .inputName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right .text-field__input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem 0.6rem;
+  font-weight: 400;
+  color: #212529;
+  border: 1px solid #EEEEEE;
+}
+
+.right .text-field__input:focus {
+  border-left: 1px #3698FB solid;
+  outline: 0;
+}
+
+.right .text-field_floating {
+  position: relative;
+}
+
+.right .text-field_floating .text-field__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 20px 10px;
+  pointer-events: none;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.right .text-field_floating .text-field__input:focus,
+.right .text-field_floating .text-field__input {
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.right .text-field_floating .text-field__input:focus ~ .text-field__label,
+.right .text-field_floating .text-field__input ~ .text-field__label {
+  opacity: 0.5;
+  -webkit-transform: scale(0.85) translateY(-0.75rem) translateX(0.15rem);
+          transform: scale(0.85) translateY(-0.75rem) translateX(0.15rem);
+}
+
+.right .email {
+  max-width: 100%;
+  margin-right: 55px;
+}
+
+.right .phone {
+  max-width: 100%;
+}
+
+.right .body_form {
+  margin-top: 55px;
+}
+
+.right .body_form .title_body_form {
+  font-size: 22px;
+  color: #2A4A5C;
+}
+
+.right .body_form .text_body_form {
+  font-size: 18px;
+  color: #7B8A92;
+}
+
+.right .body_form .radio_button {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right .body_form .radio_button div {
+  margin-right: 40px;
+}
+
+.right .body_form .radio_button .icon-information {
+  height: 10px;
+  cursor: pointer;
+}
+
+.right .body_form .information {
+  margin-top: 50px;
+  max-width: 300px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.right .body_form .text_information {
+  padding: 10px;
+  color: #7B8A92;
+}
+
+.right .body_form .agreement {
+  margin-top: 50px;
+  color: #7B8A92;
+}
+
+.right .body_form .create_account {
+  margin-top: 60px;
+  padding: 15px 65px;
+  color: white;
+  background-color: #3698FB;
+  border: none;
+  border-radius: 5px;
+}
+
+.right .body_form .create_account:hover {
+  cursor: pointer;
+  background-color: #035e8f;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,211 @@
+$title: #2A4A5C;
+$text: #7B8A92;
+$border: none;
+
+
+body {
+    background-color: #96A5B1;
+    font-family: "Barlow", sans-serif;
+}
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+.form {
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+}
+.title_header_form {
+    color: $title;
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 28px;
+}
+.text_header_form {
+    color: $text;
+    font-weight: 500;
+    font-size: 20px;
+}
+.left {
+    .bg {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .logo {
+        height: 30px;
+        z-index: 2;
+        position: absolute;
+        top: 50px;
+        margin-left: 35px;
+    }
+}
+.right {
+    margin-left: 75px;
+    .buttons {
+        margin-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+    }
+    .or {
+        position: relative;
+        top: 5px;
+        margin: 80px 10px 0px 10px; 
+        font-size: 12px;
+    }
+    .button_facebook{
+    position: relative;
+        ::after {
+            position: absolute;
+            bottom:0px;
+            right:0px;
+            width:50%;
+            border-bottom:1px #EEE solid;
+            content:"";
+            pointer-events: none;
+        }
+    }
+    .button_linkedin {
+        position: relative;
+        ::after {
+            position: absolute;
+            bottom:0px;
+            left: 0px;
+            width:50%;
+            border-bottom:1px #EEE solid;
+            content:"";
+            pointer-events: none;
+        }
+    }
+    .facebook {
+        display:flex;
+        padding: 15px;
+        padding-right: 55px;
+        background-color:#255A9B;
+        border: $border;
+        color: white;
+        &:hover {
+            background-color:#3379cf;
+            cursor: pointer;
+        }
+    }
+    .linkedIn {
+        display:flex;
+        padding: 15px;
+        padding-right: 55px;
+        background-color: #0076B6;
+        border: $border;
+        color: white;
+        &:hover {
+            cursor: pointer;
+            background-color: #035e8f;
+        }
+    }
+    .image_facebook {
+        height: 15px;
+        margin-right: 15px;
+    }
+    .image_linkedin {
+        height: 15px;
+        margin-right: 15px;
+    }
+    .inputName {
+       display: flex;
+    }
+    .text-field__input {
+        width: 100%;
+        font-size: 1rem;
+        padding: 1rem 0.6rem;
+        font-weight: 400;
+        color: #212529;
+        border: 1px solid #EEEEEE;
+      }
+      .text-field__input:focus {
+        border-left: 1px #3698FB solid;
+        outline: 0;
+      }
+  
+      .text-field_floating {
+        position: relative;
+      }
+      .text-field_floating .text-field__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 20px 10px;
+        pointer-events: none;
+        transform-origin: 0 0;
+      }
+      .text-field_floating .text-field__input:focus,
+      .text-field_floating .text-field__input {
+        padding-top: 30px;
+        padding-bottom: 5px;
+        
+      }
+  
+      .text-field_floating .text-field__input:focus~.text-field__label,
+      .text-field_floating .text-field__input~.text-field__label {
+        opacity: 0.5;
+        transform: scale(0.85) translateY(-0.75rem) translateX(0.15rem);
+      }
+
+      .email {
+        max-width: 100%;
+        margin-right: 55px;
+        
+      }
+      .phone {
+        max-width: 100%;
+      }
+      .body_form {
+          margin-top: 55px;
+          .title_body_form {
+              font-size: 22px;
+              color: $title
+          }
+          .text_body_form {
+              font-size: 18px;
+              color: $text;
+          }
+          .radio_button {
+              margin-top: 40px;
+              display: flex;
+                div {
+                    margin-right: 40px;
+                }
+                .icon-information {
+                    height: 10px;
+                    cursor: pointer;
+                }
+          }
+          .information {
+            margin-top: 50px;
+            max-width: 300px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .text_information {
+            padding: 10px;
+            color: $text
+        }
+        .agreement {
+            margin-top: 50px;
+            color: $text
+        }
+        .create_account {
+            margin-top: 60px;
+            padding: 15px 65px;
+            color: white;
+            background-color: #3698FB;
+            border: $border;
+            border-radius: 5px;
+            &:hover {
+                cursor: pointer;
+                background-color: #035e8f;
+            }
+        }
+      }
+    }
+  
+      
